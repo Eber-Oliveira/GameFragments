@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -94,7 +95,27 @@ public class CadastrarFragments extends Fragment {
     private View.OnClickListener mInserirListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            //Recuperar os valores digitados pelo usuario
+            String pergunta = mEditTextPergunta.getText().toString();
+            String resposta = mEditTextResposta.getText().toString();
 
+            //Verificar se os dados estão vazios
+            if ((!pergunta.isEmpty())&&(!resposta.isEmpty())){
+                //Criar um objeto do tipo questoes com os valores digitados pelo usuario
+                Questoes qt = new Questoes(pergunta, resposta);
+
+                 // Atraves da classe DAO insere a questao no Banco de Dados
+                BancoDeDados.getBancoDeDados(getActivity()).getDAO().inserirQuestao(qt);
+
+                //Limpar os Campos para inserir uma nova questão
+                mEditTextPergunta.setText("");
+                mEditTextResposta.setText("");
+
+                //Exibe mensagem para o usuario
+                Toast.makeText(getActivity(), "Inserido com sucesso!", Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(getActivity(), "Por favor preencha todos dados!", Toast.LENGTH_LONG).show();
+            }
         }
     };
 }
