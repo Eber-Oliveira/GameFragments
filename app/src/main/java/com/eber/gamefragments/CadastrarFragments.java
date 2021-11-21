@@ -112,7 +112,7 @@ public class CadastrarFragments extends Fragment {
                 mEditTextResposta.setText("");
 
                 //Exibe mensagem para o usuario
-                Toast.makeText(getActivity(), "Inserido com sucesso!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Dados Inseridos com Sucesso!", Toast.LENGTH_LONG).show();
             }else{
                 Toast.makeText(getActivity(), "Por favor preencha todos dados!", Toast.LENGTH_LONG).show();
             }
