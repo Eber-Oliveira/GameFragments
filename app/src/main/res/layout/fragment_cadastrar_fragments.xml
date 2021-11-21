@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarFragments">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pergunta:" />
+
+        <EditText
+            android:id="@+id/edTxtPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Informa a Pergunta" />
+
+        <TextView
+            android:id="@+id/txtViewResp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resposta:" />
+
+        <EditText
+            android:id="@+id/edTxtResposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Informe a Resposta" />
+
+        <Button
+            android:id="@+id/btnInseir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSERIR" />
+
+        <Button
+            android:id="@+id/btnJogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JOGAR" />
+    </LinearLayout>
+</ScrollView>

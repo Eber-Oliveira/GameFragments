@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastra uma pergunta para jogar"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtViewEspaco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnExibirResposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXIBIR RESPOSTA" />
+
+        <Button
+            android:id="@+id/btnPular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PULAR" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CADASTRAR PERGUNTAS E RESPOSTAS" />
+
+        <TextView
+            android:id="@+id/txtViewUpdatePergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewUpdateResposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
